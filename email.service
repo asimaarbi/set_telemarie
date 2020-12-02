@@ -1,0 +1,13 @@
+[Unit]
+Description=Email
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/pi/automate.sh
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
+
